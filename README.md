@@ -22,6 +22,8 @@ A site for a course that Shosh Rize's teaching, which includes babies exercises 
 
 You can visit the site [here](https://shosh-rize.netlify.app/)
 
+OR clone it and run it from your computer!
+
 Head to the repository on top and clone the project or download the files.
 
 ```
