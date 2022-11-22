@@ -1,0 +1,84 @@
+.course-info{
+    height: 100vh;
+    position: relative;
+
+    h1{
+        color: white;
+        font-family: Stanga;
+        font-size: 4rem;
+        font-weight: 100;
+        text-align: center;
+        text-shadow: 2px 2px 2px #45024190;
+
+    }
+
+
+    p{
+        text-shadow: 2px 2px 2px #450241a9;
+        color: white;
+        font-size: 2rem;
+        font-family: Stanga;
+        width: 60%;
+        text-align: center;
+        position: absolute;
+        top: 15%;
+        left: 50%;
+        transform: translate(-50%,-20%);
+    }
+
+    .video-1{
+        position: absolute;
+        top: 72%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 100%;
+        height: 25%;
+    }
+    @media (min-width:600px) {
+        .video-1{
+            width: 70%;
+        }
+        h1{
+            font-size: 5rem;
+        }
+        p{
+            font-size: 2.5rem;
+        }
+        
+    }
+    @media (min-width:900px) {
+        .video-1{
+            width: 49.6%;
+            height: 29.5%;
+        }
+        h1{
+            font-size: 6rem;
+        }
+        p{
+            font-size: 3rem;
+        }
+        
+    }
+    @media (min-width:1200px) {
+        .video-1{
+            width: 39%;
+            height: 28.8%;
+        }
+        
+        
+    }
+    @media (min-width:1500px) {
+        h1{
+            font-size: 8rem;
+        }
+        p{
+            font-size: 3.8rem;
+        }
+        .video-1{
+            width: 50%;
+            height: 48.3%;
+        }
+        
+        
+    }
+}

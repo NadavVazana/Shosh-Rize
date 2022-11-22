@@ -1,0 +1,14 @@
+// SETUP
+
+@import url('./setup/_base.scss');
+@import url('./setup/_normalize.scss');
+@import url('./setup/_fonts.scss');
+@import url('./setup/_helpers.scss');
+@import url('./setup/_mixins.scss');
+
+// CMPS
+
+@import url('./cmps/_home-slide.scss');
+@import url('./cmps/_who.scss');
+@import url('./cmps/_course.scss');
+@import url('./cmps/_contact.scss');

@@ -1,0 +1,242 @@
+.contact{
+    height: 20vh;
+    position: relative;
+    background-color: rgb(247, 247, 247);
+
+    .mail-modal{
+        pointer-events: none;
+        &.open-mail{
+            pointer-events: all;
+            opacity: 1;
+            transition: all 0.3s;
+        }
+        opacity: 0;
+        transition: all 0.3s;
+        z-index: 2;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        width: 100%;
+        background-color: rgb(247, 247, 247);
+        border-radius: 10px;
+        padding: 20px;
+        transform: translate(-50%,-50%);
+
+        img{
+            cursor: pointer;
+            width: 30px;
+            position: absolute;
+            top: 70%;
+            right: 6%;
+        }
+        h1{
+            font-size: 2rem;
+            letter-spacing: 4px;
+        }
+    }
+    .user-msg{
+        z-index: 1000;
+        &.open-msg{
+            left: 0;
+            transition: all 0.5s;
+            
+        }
+        transition: all 0.5s;
+        border: rgba(128, 128, 128, 0.325) 1px solid;
+        position: fixed;
+        bottom: 2%;
+        left: -150%;
+        height: 100px;
+        padding-inline: 20px;
+        background-color: #C3B4D5;
+        h1{
+        color: white;
+
+            font-size: 3rem;
+            font-weight: 100;
+        }
+
+
+    }
+
+
+    .phone-modal{
+        pointer-events: none;
+        position: relative;
+        &.open-modal{
+            pointer-events: all;
+            opacity: 1;
+            transition: all 0.3s;
+        }
+        transition: all 0.3s;
+        opacity: 0;
+        z-index: 3;
+        position: fixed;
+        top: 50%;
+        width: 100%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        background-color: rgb(247, 247, 247);
+        padding: 80px;
+        border-radius: 10px;
+
+        .name{
+            font-size:4rem;
+            margin: 0;
+        }
+        .phone{
+            width: 100%;
+            font-size: 3rem;
+            margin: 0;
+        }
+
+       img{
+        cursor: pointer;
+        position: absolute;
+        top: 57%;
+        left: 25%;
+        width: 30px;
+       }
+  
+
+
+       
+    }
+
+    h1{
+        font-family: Stanga;
+        text-align: center;
+        // padding-top: 60px;
+        font-size: 4rem;
+        letter-spacing: 4px;
+        color: #C3B4D5;
+        text-shadow: 2px 2px 2px #211d21c5;
+        
+
+    }
+
+
+
+    .ways{
+        display: flex;
+        position: absolute;
+        flex-wrap: wrap;
+        width: 90%;
+        gap:10px;
+        bottom: 15%;
+        left: 18%;
+        transform: translate(-50%);
+        img{
+            border-radius: 20px;
+            padding: 10px;
+            transition: all 0.3s;
+            &:hover{
+                transition: all 0.3s;
+                background-color: #C3B4D5;
+            }
+            cursor: pointer;
+            width: 16px;
+        }
+    }
+
+    @media (min-width:600px) {
+        .ways{
+            width: 70%;
+            left: 35%;
+            gap: 30px;
+            img{
+                width: 35px;
+
+            }
+        }
+
+        .mail-modal{
+            h1{
+                font-size: 4rem;
+            }
+            img{
+                width: 40px;
+            }
+        }
+        .phone-modal{
+            .phone{
+                font-size: 5rem;
+            }
+            img{
+                width: 40px;
+                top: 55%;
+            }
+        }
+
+        
+
+        
+    }
+    @media (min-width:900px) {
+        .ways{
+            width: 80%;
+            left: 35%;
+            gap: 70px;
+            img{
+                width: 45px;
+
+            }
+        }
+        h1{
+            font-size: 5rem;
+        }
+        .phone-modal{
+            .phone{
+                font-size: 6rem;
+            }
+            img{
+                width: 45px;
+                left: 30%;
+                top: 54%;
+            }
+        }
+        
+    }
+    @media (min-width:1200px) {
+        .ways{
+            width: 90%;
+            left: 30%;
+            gap: 90px;
+            img{
+                width:50px;
+
+            }
+        }
+        .mail-modal{
+            width: 50%;
+        }
+        h1{
+            font-size: 5rem;
+        }
+
+        .phone-modal{
+            width: 50%;
+            img{
+                left: 19%;
+            }
+        }
+        
+    }
+    @media (min-width:1500px) {
+        .ways{
+            width: 90%;
+            left: 30%;
+            gap: 150px;
+          
+        }
+        .phone-modal{
+            width: 40%;
+            img{
+                width: 50px;
+                left: 25%;
+            }
+        }
+    
+        
+    }
+}

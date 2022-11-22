@@ -1,0 +1,28 @@
+@mixin desktop-layout {
+    @media (min-width:1500px) {
+        @content
+        
+    }
+    
+};
+@mixin high-layout {
+    @media (min-width:1200px) {
+        @content
+        
+    }
+    
+};
+@mixin mid-layout {
+    @media (min-width:950px) {
+        @content
+        
+    }
+    
+};
+@mixin ipad-layout {
+    @media (min-width:600px) {
+        @content
+        
+    }
+    
+}

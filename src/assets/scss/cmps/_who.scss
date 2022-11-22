@@ -1,0 +1,125 @@
+.who-am-i{
+    height: 100vh;
+    position: relative;
+    h1{
+        &::selection{
+            background-color:  #806f94;
+        }
+        color: white;
+        text-shadow: 2px 2px 2px #4502414c;
+        font-family: Stanga;
+        font-size: 5rem;
+        letter-spacing: 4px;
+        margin: 0;
+        margin-top: 50px;
+        text-align: center;
+    }
+    p{
+        &::selection{
+            background-color:  #806f94;
+        }
+        z-index: 1;
+        color: white;
+        text-shadow: 2px 2px 2px #4502415b;
+        font-size: 2rem;
+        font-family: Stanga;
+        text-align: center;
+        width: 50%;
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%,-30%);
+    }
+    img{
+        &::selection{
+            background-color:  #806f94;
+        }
+        border-radius: 20px;
+    }
+    .with-baby{
+        position: absolute;
+        filter:brightness(70%);
+        left:0%;
+        width: 100%;
+        opacity: .8;
+       top: 70%;
+        transform: translate(0,-50%);
+
+        
+    }
+    .me{
+        position: absolute;
+        opacity: .8;
+        width: 50%;
+        filter:brightness(70%);
+        left: 7%;
+        top: 10%;
+    }
+
+    .with-baby-2{
+        filter:brightness(70%);
+        opacity: .8;
+        z-index: -1;
+        width: 50%;
+        position: absolute;
+        top: 35%;
+        right: 0%;
+
+    }
+
+    @media (min-width:600px) {
+        .with-baby{
+            width: 50%;
+        }
+
+    
+        
+    }
+    @media (min-width:900px) {
+        .me{
+            width: 30%;
+        }
+        .with-baby{
+            width: 70%;
+            top: 80%;
+            left: 20%;
+        }
+        .with-baby-2{
+            top: 15%;
+        }
+        h1{
+            font-size: 9rem;
+        }
+        p{
+            font-size: 3rem;
+        }
+        
+    }
+    @media (min-width:1200px) {
+        .with-baby{
+            width: 50%;
+        }
+        .with-baby-2{
+            width: 40%;
+            top: 10%;
+        }
+        
+    }
+    @media (min-width:1500px) {
+        .me{
+            width: 20%;
+        }
+        .with-baby{
+            width: 40%;
+            left: 50%;
+        }
+
+        .with-baby-2{
+            width: 30%;
+            right: 10%;
+            top: 5%;
+        }
+        
+        
+    }
+}

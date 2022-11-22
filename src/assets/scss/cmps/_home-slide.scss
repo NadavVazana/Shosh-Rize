@@ -1,0 +1,150 @@
+
+.App{
+    
+    position: relative;
+    overflow-x: hidden;
+
+
+
+    .modal{
+        &.open{
+            opacity: 1;
+            bottom:20%;
+            transition: all .3s;
+            
+        }
+        transition: all .3s;
+        opacity: 0;
+        z-index: 1;
+        bottom: 0;
+        right: 11%;
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        img{
+            border-radius: 10px;
+            cursor: pointer;
+            z-index: 1;
+            width: 40px;
+            
+        }
+    }
+    
+    .title{
+        text-shadow: 2px 2px 2px #4502414c;
+        color: rgb(251, 243, 243);
+        z-index: 1;
+        position: absolute;
+        font-family: Stanga;
+        letter-spacing: 4px;
+        top: 25%;
+        font-weight: 100;
+        left: 50%;
+        width: 100%;
+        text-align: center;
+        transform: translate(-50%,-50%);
+        font-size:5rem;
+        opacity: 1;
+
+        &::selection{
+            background-color:  #806f94;
+        }
+    }
+    .subtitle{
+        &::selection{
+            background-color:  #806f94;
+        }
+        text-shadow: 2px 2px 2px #4502414c;
+        color: rgb(251, 243, 243);
+        z-index: 1;
+        position: absolute;
+        font-family: Stanga;
+        letter-spacing: 4px;
+        top: 40%;
+        width: 90%;
+        text-align: center;
+        font-weight: 100;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        font-size:2rem;
+        opacity: 1;
+
+    }
+    .logo{
+        cursor: pointer;
+        position: fixed;
+        z-index: 1;
+        width: 130px;
+        right: -1%;
+        bottom: 0;
+    }
+    @media (min-width:600px) {
+        .modal{
+            right: 10%;
+
+        }
+        .logo{
+            width: 200px;
+        }
+        
+    }
+    @media (min-width:900px) {
+        .modal{
+            right: 7%;
+
+        }
+        .title{
+            font-size: 10rem;
+            top: 50%;
+        }
+        .subtitle{
+            font-size: 3rem;
+            top: 70%;
+        }
+        
+    }
+    @media (min-width:1200px) {
+        .modal{
+            right: 4%;
+
+        }
+
+    
+        
+    }
+    @media (min-width:1500px) {
+        .modal{
+            right: 3%;
+
+        }
+        .title{
+            font-size: 15rem;
+            top: 30%;
+        }
+        .subtitle{
+            font-size: 4rem;
+            top: 50%;
+            padding-top: 50px;
+        }
+        
+        
+    }
+}
+
+
+.slideshow{
+   
+    position: relative;
+    overflow-y: hidden;
+ 
+    div{
+        filter:brightness(92%);
+        height: 100vh;
+        background-position:center;
+        background-size: cover;
+        opacity: .94;
+    }
+
+}
+
