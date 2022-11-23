@@ -3,9 +3,12 @@
     position: relative;
 
     h1{
+        &::selection{
+            background-color:  #806f94;
+        }
         color: white;
         font-family: Stanga;
-        font-size: 4rem;
+        font-size: 3rem;
         font-weight: 100;
         text-align: center;
         text-shadow: 2px 2px 2px #45024190;
@@ -14,19 +17,25 @@
 
 
     p{
-        text-shadow: 2px 2px 2px #450241a9;
+        &::selection{
+            background-color:  #806f94;
+        }
+        text-shadow: 2px 2px 2px #450241ee;
         color: white;
         font-size: 2rem;
         font-family: Stanga;
-        width: 60%;
+        width: 80%;
         text-align: center;
         position: absolute;
-        top: 15%;
+        top: 20%;
         left: 50%;
         transform: translate(-50%,-20%);
     }
 
     .video-1{
+        &::selection{
+            background-color:  #806f94;
+        }
         position: absolute;
         top: 80%;
         left: 50%;

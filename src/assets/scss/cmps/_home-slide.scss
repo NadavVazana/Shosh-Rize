@@ -7,23 +7,29 @@
 
 
     .modal{
+        z-index: 2;
         &.open{
             opacity: 1;
-            bottom:20%;
+            bottom:13%;
             transition: all .3s;
+            pointer-events: all;
             
         }
+        pointer-events: none;
         transition: all .3s;
         opacity: 0;
-        z-index: 1;
         bottom: 0;
-        right: 11%;
+        right: 7%;
         position: fixed;
         display: flex;
         flex-direction: column;
         gap: 15px;
         img{
-            border-radius: 10px;
+            &::selection{
+                background-color:  #806f94;
+            }
+            -webkit-tap-highlight-color: transparent;
+            border-radius: 20px;
             cursor: pointer;
             z-index: 1;
             width: 40px;
@@ -72,26 +78,30 @@
 
     }
     .logo{
+        &::selection{
+            background-color:  #806f94;
+        }
+        -webkit-tap-highlight-color: transparent;
         cursor: pointer;
         position: fixed;
-        z-index: 1;
-        width: 130px;
+        z-index: 2;
+        width: 110px;
         right: -1%;
         bottom: 0;
     }
     @media (min-width:600px) {
         .modal{
-            right: 10%;
+            right: 5%;
 
         }
         .logo{
-            width: 200px;
+            width: 150px;
         }
         
     }
     @media (min-width:900px) {
         .modal{
-            right: 7%;
+            right: 3%;
 
         }
         .title{
@@ -106,7 +116,7 @@
     }
     @media (min-width:1200px) {
         .modal{
-            right: 4%;
+            right: 3%;
 
         }
 
@@ -115,7 +125,7 @@
     }
     @media (min-width:1500px) {
         .modal{
-            right: 3%;
+            right: 1.5%;
 
         }
         .title{

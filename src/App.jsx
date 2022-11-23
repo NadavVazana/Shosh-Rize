@@ -8,13 +8,11 @@ import { WhoAmI } from "./cmps/who-am-i";
 export const App = ()=> {
   const [isModal,setModal] = useState(false)
   const [isPhoneModal,setPhoneModal] = useState(false)
-  const [isMailModal,setMailModal] = useState(false)
 
   console.log(isPhoneModal);
   return (
     <section className="App">
                 <div  onClick={()=>setPhoneModal(false)} className={isPhoneModal ? 'black-screen open-phone' : 'black-screen'}></div>
-                <div onClick={()=>setMailModal(false)} className={isMailModal ? 'mail-black open-mail' : 'mail-black'}></div>
 
 
             <div className={isModal ? 'open modal' : 'modal'}>
@@ -28,7 +26,7 @@ export const App = ()=> {
       <HomeSlideShow />
       <WhoAmI/>
       <CourseInfo />
-      <Contact setMailModal={setMailModal} isMailModal={isMailModal} isPhoneModal={isPhoneModal} setPhoneModal={setPhoneModal} />
+      <Contact isPhoneModal={isPhoneModal} setPhoneModal={setPhoneModal} />
     </section>
   );
 }
